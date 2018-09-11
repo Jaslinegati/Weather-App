@@ -1,0 +1,42 @@
+div {
+    display: block;
+}
+#wrapper {
+    width: 1000px;
+    height:1000px;
+}
+
+#first {
+    float:left;
+    width: 50%;
+    height: 50%;
+    background: white;
+}
+
+#second {
+    float:right;
+    width: 50%;
+    height: 50%;
+    background: white;
+}
+
+#third {
+    float:left;
+    width: 50%;
+    height: 50%;
+    background: white;
+}
+
+#fourth {
+    float:left;
+    width: 50%;
+    height: 50%;
+    background: white;
+}
+
+#fifth{
+    float:left;
+    width: 80%;
+    height: 50%;
+    background: white;
+}

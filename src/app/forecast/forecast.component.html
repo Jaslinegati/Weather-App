@@ -1,0 +1,29 @@
+<div class="container"  *ngIf = "!fiveDayData">
+  Loading weather... <i class="fas fa-spinner"></i>
+</div>
+  <div *ngIf = "fiveDayData">
+  
+  <h1>Below is a five day Eldoret weather forecast :) </h1>
+
+
+  <div  class="row">
+
+  <div  *ngFor="let data of fiveDayData" class="col"> 
+
+  <img [src]="iconUrl"/>
+  <h3>Date and time :{{data.dt_txt}}</h3>
+  <p>Clouds:{{data.clouds.all}}</p>
+  <p>Weather:{{data.weather[0].main}}</p>
+  <p>Weather Description:{{data.weather[0].description}}</p>
+  <p>Ground Level:{{data.main.grnd_level}}</p>
+  <p>Humidity:{{data.main.humidity}}</p>
+  <p>Presure:{{data.main.pressure}}</p>
+  <p>Sea Level:{{data.main.sea_level}}</p>
+  <p>Wind Speed:{{data.wind.speed}}</p>
+  <p>{{errorMsg}}</p>
+
+  </div>
+
+  </div>
+  </div>
+  
